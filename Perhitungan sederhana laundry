@@ -1,0 +1,35 @@
+#Perhitungan Modal dan Keuntungan Laundry
+
+#Modal Awal
+MC=int(input('Harga MC(2unit):Rp'))
+MP=int(input('Harga MP(1unit):Rp'))
+Strk=int(input('Harga Strk(5unit):Rp'))
+TG=int(input('Harga TG(1unit):Rp'))
+Ren=int(input('Biaya Ren(1xRen):Rp'))
+MK=int(input('Harga Mk(1set):Rp'))
+Prom=int(input('Biaya Prom(1xProm):Rp'))
+Total_Awal=(MC+MP+Strk+TG+Ren+MK+Prom)
+print(Total_Awal)
+
+#Biaya Bulanan
+Lstrk=int(input('Biaya Lstrk(1bln):Rp'))
+Dtrgn=int(input('Harga Dtgrn(1kg):Rp'))
+Pwngi=int(input('Harga Pwngi(1kg):Rp'))
+GK=int(input('Biaya GK(1krywn):Rp'))
+Air=int(input('Biaya Air(1bln):Rp'))
+Baj=int(input('Biaya Baj(1bln):Rp'))
+Dll=int(input('Biaya Dll(1bln):Rp'))
+Total_Blnan=(Lstrk+Dtrgn+Pwngi+GK+Air+Baj+Dll)
+print(Total_Blnan)
+Total_Modal=(Total_Awal+Total_Blnan)
+print(Total_Modal)
+
+#Asumsi Pendapatan Perbulan
+Hrg_laundry=int(input('Hrg_laundry(/kg):Rp'))
+P=int(input('P(/hari):Kg'))
+P_Bln=(P*30)*Hrg_laundry
+print(P_Bln)
+
+#Asumsi Keuntungan Perbulan
+K_Bln=(Total_Modal-P_Bln)
+print(K_Bln)
